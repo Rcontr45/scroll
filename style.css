@@ -1,0 +1,58 @@
+body {
+}
+
+.grid-container {
+  height:10000px;
+
+  display:grid;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+
+  background: rgb(238,174,202);
+  background: linear-gradient(
+  0deg, rgba(238,174,202,1)
+  0%, rgba(161,109,13,1)
+  25px, rgba(148,187,233,1)
+  26px, rgba(148,151,233,1)
+  100%);
+  position: relative;
+ }
+
+#box1{
+  width: 276px;
+  height:600px;
+  position:absolute;
+  top:9400px;
+  left:400px;
+  background-image:url('images/red1.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  animation-name: soar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top:0;
+}
+
+  #box2{
+  width: 274px;
+  height:679px;
+  position:absolute;
+  top:9321px;
+  left:100px;
+  background-image:url('images/smile.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  animation-name: soar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top:0;
+}
+
+
+@keyframes soar {
+  50% {
+    transform: translate(0, -7px);
+  }
+}
