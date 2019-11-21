@@ -22,37 +22,43 @@ window.onscroll = function() {
   height = window.innerHeight;
   //console.log("browser height " +height);
 
-scrollvalue = window.scrollY
-$box1.style.top = (-120 + height + scrollvalue) + "px";
+scrollvalue = window.scrollY;
+var y = window.innerHeight + window.pageYOffset;
 
-
+// $box1.style.top = (-120 + height + scrollvalue) + "px";
+$box1.style.bottom = (10100 - y)*1.05 + "px";
+console.log(window.innerHeight + window.pageYOffset);
 
   switch (true) {
 
     case (scrollvalue > 9000):
-    $box1.style.background =url('images/red1.png');
+    $box1.style.background ="url('images/red1.png')";
+    console.log("scrollvalue " + scrollvalue);
     break;
 
     case (scrollvalue > 8000):
-    $box1.style.background =url('images/smile.png');
+    $box1.style.background ="url('images/smile.png')";
+    $box2.style.background ="url('images/power.png')";
+
+
     break;
 
     case (scrollvalue > 7000):
-    $box1.style.background =url('images/power.png');
+    $box1.style.background ="url('images/power.png')";
     break;
 
 
     case (scrollvalue > 6000):
-    $box1.style.background =url('images/red.png');
+    $box1.style.background ="url('images/red.png')";
     break;
 
 
     case (scrollvalue > 2000):
-    $box1.style.background =url('images/red.png');
+    $box1.style.background ="url('images/red.png')";
     break;
 
     default:
-    $box1.style.background =url('http://placekitten.com/200/300');
+    $box1.style.background ="url('http://placekitten.com/200/300')";
 
   }
 
@@ -63,21 +69,21 @@ $box1.style.top = (-120 + height + scrollvalue) + "px";
     break;
 
     case (scrollvalue > 8000):
-    $box2.style.background =url('images/power.png')
+    $box2.style.background ="url('images/power.png')";
     break;
 
     case (scrollvalue > 7000):
-    $box2.style.background =url('images/power.png')
+    $box2.style.background ="url('images/power.png')";
     break;
 
 
     case (scrollvalue > 6000):
-    $box2.style.background =url('images/power.png')
+    $box2.style.background ="url('images/power.png')";
     break;
 
 
     case (scrollvalue > 2000):
-    $box2.style.background =url('images/raven.png');
+    $box2.style.background ="url('images/raven.png')";
     break;
 
     default:

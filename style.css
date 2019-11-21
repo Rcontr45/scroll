@@ -3,6 +3,7 @@ body {
 
 .grid-container {
   height:10000px;
+  overflow: hidden;
 
   display:grid;
   align-content: center;
@@ -22,7 +23,7 @@ body {
   width: 276px;
   height:600px;
   position:absolute;
-  top:9400px;
+  bottom:10px;
   left:400px;
   background-image:url('images/red1.png');
   background-repeat:no-repeat;
@@ -32,6 +33,7 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-top:0;
+  border: 1px solid red;
 }
 
   #box2{
@@ -48,6 +50,7 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-top:0;
+  border: 1px solid red;
 }
 
 
