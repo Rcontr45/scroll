@@ -48,6 +48,7 @@ console.log(window.innerHeight + window.pageYOffset);
     case (scrollvalue > 7000):
     $box1.style.background ="url('images/power.png')";
     $box2.style.background ="url('images/noose.png')";
+    console.log("scrollvalue " + scrollvalue);
     break;
 
 
