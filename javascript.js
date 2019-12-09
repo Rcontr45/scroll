@@ -32,41 +32,43 @@ console.log(window.innerHeight + window.pageYOffset);
   switch (true) {
 
     case (scrollvalue > 9000):
-    $box1.style.background ="url('images/red1.png')";
-    $box2.style.background ="url('images/smile.png')";
+    $box1.style.background ="url('images/smile.png')";
+
     console.log("scrollvalue " + scrollvalue);
     break;
 
     case (scrollvalue > 8000):
-    $box1.style.background ="url('images/red1.png')";
-    $box2.style.background ="url('images/smile.png')";
+    $box1.style.background ="url('images/smile.png')";
 
 
 
     break;
 
     case (scrollvalue > 7000):
-    $box1.style.background ="url('images/red1.png')";
-    $box1.height ="679px";
-    $box2.style.background ="url('images/smile.png')";
+    $box1.style.background ="url('images/smile.png')";
+
     console.log("scrollvalue " + scrollvalue);
     break;
 
 
     case (scrollvalue > 6000):
-    $box1.style.background ="url('images/red1.png')";
-    $box2.style.background ="url('images/raven.png')";
+    $box1.style.background ="url('images/smile.png')";
+
+
     break;
 
 
     case (scrollvalue > 2000):
-    $box1.style.background ="url('images/red1.png')";
-    $box2.style.background ="url('images/raven.png')";
+    $box1.style.background ="url('images/noose.png')";
+
+
     break;
 
     default:
-    $box1.style.background ="url('http://placekitten.com/200/300')";
-    $box2.style.background ="url(http://placekitten.com/200/300)";
+    $box1.style.background ="url('images/raven.png')";
+    $box1.height="747px";
+    $box1.width="600px";
+
 
   }
 

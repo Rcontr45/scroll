@@ -9,7 +9,7 @@ body {
   align-content: center;
   grid-template-columns: auto auto auto;
 
-  background: rgb(238,174,202);
+
   background: linear-gradient(
   0deg, rgba(238,174,202,1)
   0%, rgba(161,109,13,1)
@@ -20,40 +20,23 @@ body {
  }
 
 #box1{
-  width: 276px;
-  height:600px;
+  width: 600px;
+  height:747px;
   position:absolute;
-  bottom:9400px;
+  bottom:9321px;
   left:400px;
-  background-image:"url('images/red1.png')";
-  background-repeat:no-repeat;
+  background-image:url("images/smile.png");
+  background-repeat:no-repeat !important;
+  overflow: hidden;
   background-size:cover;
   animation-name: soar;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-top:0;
-  border: 1px solid red;
-  
-}
 
-  #box2{
-  width: 274px;
-  height:679px;
-  position:absolute;
-  top:9321px;
-  left:100px;
-  background-image:"url('images/smile.png')";
-  background-repeat:no-repeat;
-  background-size: cover;
-  animation-name: soar;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-top:0;
-  border: 1px solid red;
-}
 
+}
 
 @keyframes soar {
   50% {
